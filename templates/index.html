@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        HELLO!!!!!
+    </h1>
+    <form action="", method="post">
+        <button name="surprise" value="connor">Press me!!!</button>
+    </form>
+    {% if(name == "connor") %}
+    <h1>HELLO {{name}}</h1>
+    {% endif %}
+
+    <div id="test-div">
+
+    </div>
+
+    <!-- Outermost container with everything -->
+    <div id="matrix-container">
+        <!-- left bracket -->
+        <div class="bracket-left">
+            <div id="bottom-bracket"></div>
+            <div id="bracket-body"></div>
+            <div id="top-bracket"></div>
+        </div>
+        <!-- matrix elements -->
+        <div id="matrix-elements">
+            <form id="matrix-form" action="", method="post">
+                <input name="surprise" value="placeholder"></input>
+            </form>
+        </div>
+        <!-- right bracket -->
+        <div class="bracket-right">
+            <div id="bottom-bracket"> </div>
+            <div id="bracket-body"></div>
+            <div id="top-bracket"></div>
+        </div>
+    </div>
+
+    <button id="add-row" onClick="addRow();">Add Row</button>
+    <button id="add-col" onClick="addCol()">Add Col</button>
+</body>
+<script type="text/javascript" src="{{url_for('static', filename='main.js')}}"></script>
+</html>
