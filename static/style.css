@@ -9,18 +9,17 @@
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    width:50px;
     height:200px;
 }
 
 #bottom-bracket{
-    flex:1;
     height:5px;
     width:10px;
     background-color: black;
 }
 
 #top-bracket{
-    flex:1;
     height:5px;
     width:10px;
     background-color: black;
@@ -34,7 +33,6 @@
 }
 
 .bracket-left{
-    flex:1;
     display:flex;
     flex-direction:column;
     height:auto;
@@ -42,11 +40,22 @@
     /* background-color: black; */
 }
 
+.el{
+    flex:1;
+    width:10px;
+    margin:10px;
+}
+
 .row{
     flex:1;
     background-color: aqua;
-    height:100px;
+    /* height:100px; */
     width:auto;
+}
+
+#matrix-form{
+    display:flex;
+    flex-direction: column;
 }
 
 #matrix-elements{
@@ -57,7 +66,6 @@
 
 .bracket-right{
     flex-flow:column wrap-reverse;
-    flex:1;
     display:flex;
     flex-direction:column;
     height:auto;
